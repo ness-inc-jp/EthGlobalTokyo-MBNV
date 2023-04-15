@@ -4,7 +4,7 @@
 
 
 
-### How it's made?🤔
+## How it's made?🤔
 ***
 
 For this project, we created an iOS app using Swift to provide a better ownership experience.
@@ -18,7 +18,7 @@ By clearing this area, we were able to smoothly express Graph information in swi
 However, GraphQL and Swift were not very compatible, and there were still some issues, such as the inability to reflect the type of NFT attributes.
 
 
-### Tech used
+## Tech used
 ___
 - Swift
 - Metamask SDK
