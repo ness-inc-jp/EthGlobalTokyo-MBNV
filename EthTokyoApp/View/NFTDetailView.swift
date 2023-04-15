@@ -51,10 +51,10 @@ struct NFTDetailView: View {
                         .lineLimit(1)
                         .truncationMode(.tail)
                         .frame(width: 120, alignment: .leading)
+                    
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                
                 
                 Spacer()
             }
@@ -64,6 +64,7 @@ struct NFTDetailView: View {
             WebImage(url: detailNFT.imageUrl)
                 .resizable()
                 .indicator(.activity)
+                .shadow(color: .black.opacity(0.1), radius: 32)
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: imageWidth)
                 .rotation3DEffect(

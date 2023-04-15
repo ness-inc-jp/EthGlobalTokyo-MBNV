@@ -21,56 +21,72 @@ struct LoginView: View {
     
     let dapp = Dapp(name: "EthTokyoApp", url: "https://eth-tokyo-app.com")
     
-    
     var body: some View {
         
-        VStack {
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
             
-            Spacer()
-            
-            Button {
-                
-                isProgressing = true
-                ethereum.connect(dapp)?.sink(receiveCompletion: { completion in
-                    
-                    switch completion {
-                    case .failure(let error):
-                        isProgressing = false
-                        isError = true
-                        errorMessage = error.localizedDescription
-                        print("Connection Error: \(errorMessage)")
-                    
-                    default: break
-                    }
-                    
-                }, receiveValue: { result in
-                    
-                    isProgressing = false
-                    ethereum.selectedAddress = result as! String
-                    
-                }).store(in: &cancellables)
-                
-            } label: {
-                
-                Text("Connect MetaMask")
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 52)
-                    .background(Color.black.cornerRadius(16))
-                
+            VStack(spacing: 4) {
+                Text("MBNV")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text("Most Beatiful NFT Viewer")
             }
-            .padding(.bottom, 60)
-        }
-        .padding()
-        .alert(isPresented: $isError) {
-            Alert(
-                title: Text("Error"),
-                message: Text(errorMessage),
-                dismissButton: .default(Text("OK")) {
-                    errorMessage = ""
-                    isError = false
+            .foregroundColor(.white)
+            .padding(.top, -120)
+            
+            
+            VStack {
+                
+                Spacer()
+                
+                Button {
+                    
+                    isProgressing = true
+                    ethereum.connect(dapp)?.sink(receiveCompletion: { completion in
+                        
+                        switch completion {
+                        case .failure(let error):
+                            isProgressing = false
+                            isError = true
+                            errorMessage = error.localizedDescription
+                            print("Connection Error: \(errorMessage)")
+                        
+                        default: break
+                        }
+                        
+                    }, receiveValue: { result in
+                        
+                        isProgressing = false
+                        ethereum.selectedAddress = result as! String
+                        
+                    }).store(in: &cancellables)
+                    
+                } label: {
+                    
+                    Text("Connect MetaMask")
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 52)
+                        .background(Color.white.cornerRadius(16))
+                        .padding(.horizontal, 40)
+                    
                 }
-            )
+                .padding(.bottom, 60)
+            }
+            .padding()
+            .alert(isPresented: $isError) {
+                Alert(
+                    title: Text("Error"),
+                    message: Text(errorMessage),
+                    dismissButton: .default(Text("OK")) {
+                        errorMessage = ""
+                        isError = false
+                    }
+                )
+        }
         }
     }
 }

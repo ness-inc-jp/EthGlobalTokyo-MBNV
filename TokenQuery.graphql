@@ -1,0 +1,47 @@
+query QB1($input: TokensInput!) {
+  Tokens(input: $input) {
+    Token {
+      address
+      baseURI
+      chainId
+      contractMetaDataURI
+      decimals
+      id
+      lastTransferBlock
+      lastTransferHash
+      lastTransferTimestamp
+      name
+      rawContractMetaData
+      symbol
+      tokenBalances {
+        owner {
+          addresses
+        }
+        amount
+      }
+      tokenNfts {
+        id
+        tokenId
+        tokenURI
+        metaData {
+          name
+        }
+        contentValue {
+          image {
+            large
+            medium
+            original
+            small
+            extraSmall
+          }
+        }
+      }
+      totalSupply
+      type
+    }
+    pageInfo {
+      nextCursor
+      prevCursor
+    }
+  }
+}

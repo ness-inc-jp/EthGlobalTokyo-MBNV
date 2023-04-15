@@ -23,17 +23,42 @@
 		56D0287329EABC6D0048B294 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 56D0287229EABC6D0048B294 /* BottomSheet */; };
 		56D0287529EABD7F0048B294 /* NFTDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0287429EABD7F0048B294 /* NFTDetailView.swift */; };
 		56D0287729EAC9460048B294 /* GetRandomEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0287629EAC9460048B294 /* GetRandomEmoji.swift */; };
-		56D0288929EAF9370048B294 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0287A29EAF9370048B294 /* MainViewModel.swift */; };
-		56D0288A29EAF9370048B294 /* GetRandomEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0287C29EAF9370048B294 /* GetRandomEmoji.swift */; };
-		56D0288B29EAF9370048B294 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0287D29EAF9370048B294 /* MotionManager.swift */; };
-		56D0288C29EAF9370048B294 /* EthTokyoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0287E29EAF9370048B294 /* EthTokyoAppApp.swift */; };
-		56D0288D29EAF9370048B294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D0287F29EAF9370048B294 /* Assets.xcassets */; };
-		56D0288E29EAF9370048B294 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D0288129EAF9370048B294 /* Preview Assets.xcassets */; };
-		56D0288F29EAF9370048B294 /* GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0288329EAF9370048B294 /* GraphQLClient.swift */; };
-		56D0289029EAF9370048B294 /* NFTDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0288529EAF9370048B294 /* NFTDetailView.swift */; };
-		56D0289129EAF9370048B294 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0288629EAF9370048B294 /* LoginView.swift */; };
-		56D0289229EAF9370048B294 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0288729EAF9370048B294 /* MainView.swift */; };
-		56D0289329EAF9370048B294 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0288829EAF9370048B294 /* ContentView.swift */; };
+		56D028CF29EB17020048B294 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D028CE29EB17020048B294 /* SearchView.swift */; };
+		56D0291D29EB1A500048B294 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0291C29EB1A500048B294 /* SearchViewModel.swift */; };
+		56D0299429EB41390048B294 /* AirStackAPI.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0296B29EB41390048B294 /* AirStackAPI.graphql.swift */; };
+		56D0299529EB41390048B294 /* TokenBalancesQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0296E29EB41390048B294 /* TokenBalancesQuery.graphql.swift */; };
+		56D0299629EB41390048B294 /* TokensQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0296F29EB41390048B294 /* TokensQuery.graphql.swift */; };
+		56D0299729EB41390048B294 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297229EB41390048B294 /* Identity.swift */; };
+		56D0299829EB41390048B294 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297329EB41390048B294 /* Address.swift */; };
+		56D0299929EB41390048B294 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297429EB41390048B294 /* Time.swift */; };
+		56D0299A29EB41390048B294 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297529EB41390048B294 /* Map.swift */; };
+		56D0299B29EB41390048B294 /* TokenType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297729EB41390048B294 /* TokenType.graphql.swift */; };
+		56D0299C29EB41390048B294 /* OrderBy.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297829EB41390048B294 /* OrderBy.graphql.swift */; };
+		56D0299D29EB41390048B294 /* TokenBlockchain.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297929EB41390048B294 /* TokenBlockchain.graphql.swift */; };
+		56D0299E29EB41390048B294 /* NftMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297B29EB41390048B294 /* NftMetadata.graphql.swift */; };
+		56D0299F29EB41390048B294 /* TokenNft.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297C29EB41390048B294 /* TokenNft.graphql.swift */; };
+		56D029A029EB41390048B294 /* Media.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297D29EB41390048B294 /* Media.graphql.swift */; };
+		56D029A129EB41390048B294 /* ImageSizes.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297E29EB41390048B294 /* ImageSizes.graphql.swift */; };
+		56D029A229EB41390048B294 /* TokensOutput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0297F29EB41390048B294 /* TokensOutput.graphql.swift */; };
+		56D029A329EB41390048B294 /* TokenBalance.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298029EB41390048B294 /* TokenBalance.graphql.swift */; };
+		56D029A429EB41390048B294 /* TokenBalancesOutput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298129EB41390048B294 /* TokenBalancesOutput.graphql.swift */; };
+		56D029A529EB41390048B294 /* PageInfo.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298229EB41390048B294 /* PageInfo.graphql.swift */; };
+		56D029A629EB41390048B294 /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298329EB41390048B294 /* Query.graphql.swift */; };
+		56D029A729EB41390048B294 /* Wallet.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298429EB41390048B294 /* Wallet.graphql.swift */; };
+		56D029A829EB41390048B294 /* Token.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298529EB41390048B294 /* Token.graphql.swift */; };
+		56D029A929EB41390048B294 /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298629EB41390048B294 /* SchemaConfiguration.swift */; };
+		56D029AA29EB41390048B294 /* String_Comparator_Exp.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298829EB41390048B294 /* String_Comparator_Exp.graphql.swift */; };
+		56D029AB29EB41390048B294 /* TokenBalancesInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298929EB41390048B294 /* TokenBalancesInput.graphql.swift */; };
+		56D029AC29EB41390048B294 /* Address_Comparator_Exp.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298A29EB41390048B294 /* Address_Comparator_Exp.graphql.swift */; };
+		56D029AD29EB41390048B294 /* TokensInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298B29EB41390048B294 /* TokensInput.graphql.swift */; };
+		56D029AE29EB41390048B294 /* TokenBalanceOrderBy.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298C29EB41390048B294 /* TokenBalanceOrderBy.graphql.swift */; };
+		56D029AF29EB41390048B294 /* TokenOrderBy.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298D29EB41390048B294 /* TokenOrderBy.graphql.swift */; };
+		56D029B029EB41390048B294 /* TokenType_Comparator_Exp.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298E29EB41390048B294 /* TokenType_Comparator_Exp.graphql.swift */; };
+		56D029B129EB41390048B294 /* Float_Comparator_Exp.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0298F29EB41390048B294 /* Float_Comparator_Exp.graphql.swift */; };
+		56D029B229EB41390048B294 /* TokenFilter.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0299029EB41390048B294 /* TokenFilter.graphql.swift */; };
+		56D029B329EB41390048B294 /* TokenBalanceFilter.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0299129EB41390048B294 /* TokenBalanceFilter.graphql.swift */; };
+		56D029B429EB41390048B294 /* Identity_Comparator_Exp.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0299229EB41390048B294 /* Identity_Comparator_Exp.graphql.swift */; };
+		56D029B529EB41390048B294 /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0299329EB41390048B294 /* SchemaMetadata.graphql.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,17 +74,42 @@
 		56D0286F29EAB50D0048B294 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		56D0287429EABD7F0048B294 /* NFTDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTDetailView.swift; sourceTree = "<group>"; };
 		56D0287629EAC9460048B294 /* GetRandomEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomEmoji.swift; sourceTree = "<group>"; };
-		56D0287A29EAF9370048B294 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		56D0287C29EAF9370048B294 /* GetRandomEmoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomEmoji.swift; sourceTree = "<group>"; };
-		56D0287D29EAF9370048B294 /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
-		56D0287E29EAF9370048B294 /* EthTokyoAppApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthTokyoAppApp.swift; sourceTree = "<group>"; };
-		56D0287F29EAF9370048B294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		56D0288129EAF9370048B294 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		56D0288329EAF9370048B294 /* GraphQLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLClient.swift; sourceTree = "<group>"; };
-		56D0288529EAF9370048B294 /* NFTDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFTDetailView.swift; sourceTree = "<group>"; };
-		56D0288629EAF9370048B294 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		56D0288729EAF9370048B294 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		56D0288829EAF9370048B294 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		56D028CE29EB17020048B294 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		56D0291C29EB1A500048B294 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		56D0296B29EB41390048B294 /* AirStackAPI.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirStackAPI.graphql.swift; sourceTree = "<group>"; };
+		56D0296E29EB41390048B294 /* TokenBalancesQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenBalancesQuery.graphql.swift; sourceTree = "<group>"; };
+		56D0296F29EB41390048B294 /* TokensQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensQuery.graphql.swift; sourceTree = "<group>"; };
+		56D0297229EB41390048B294 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		56D0297329EB41390048B294 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		56D0297429EB41390048B294 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		56D0297529EB41390048B294 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		56D0297729EB41390048B294 /* TokenType.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenType.graphql.swift; sourceTree = "<group>"; };
+		56D0297829EB41390048B294 /* OrderBy.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBy.graphql.swift; sourceTree = "<group>"; };
+		56D0297929EB41390048B294 /* TokenBlockchain.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenBlockchain.graphql.swift; sourceTree = "<group>"; };
+		56D0297B29EB41390048B294 /* NftMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NftMetadata.graphql.swift; sourceTree = "<group>"; };
+		56D0297C29EB41390048B294 /* TokenNft.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenNft.graphql.swift; sourceTree = "<group>"; };
+		56D0297D29EB41390048B294 /* Media.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.graphql.swift; sourceTree = "<group>"; };
+		56D0297E29EB41390048B294 /* ImageSizes.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSizes.graphql.swift; sourceTree = "<group>"; };
+		56D0297F29EB41390048B294 /* TokensOutput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensOutput.graphql.swift; sourceTree = "<group>"; };
+		56D0298029EB41390048B294 /* TokenBalance.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenBalance.graphql.swift; sourceTree = "<group>"; };
+		56D0298129EB41390048B294 /* TokenBalancesOutput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenBalancesOutput.graphql.swift; sourceTree = "<group>"; };
+		56D0298229EB41390048B294 /* PageInfo.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageInfo.graphql.swift; sourceTree = "<group>"; };
+		56D0298329EB41390048B294 /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		56D0298429EB41390048B294 /* Wallet.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.graphql.swift; sourceTree = "<group>"; };
+		56D0298529EB41390048B294 /* Token.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.graphql.swift; sourceTree = "<group>"; };
+		56D0298629EB41390048B294 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		56D0298829EB41390048B294 /* String_Comparator_Exp.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Comparator_Exp.graphql.swift; sourceTree = "<group>"; };
+		56D0298929EB41390048B294 /* TokenBalancesInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenBalancesInput.graphql.swift; sourceTree = "<group>"; };
+		56D0298A29EB41390048B294 /* Address_Comparator_Exp.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address_Comparator_Exp.graphql.swift; sourceTree = "<group>"; };
+		56D0298B29EB41390048B294 /* TokensInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokensInput.graphql.swift; sourceTree = "<group>"; };
+		56D0298C29EB41390048B294 /* TokenBalanceOrderBy.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenBalanceOrderBy.graphql.swift; sourceTree = "<group>"; };
+		56D0298D29EB41390048B294 /* TokenOrderBy.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenOrderBy.graphql.swift; sourceTree = "<group>"; };
+		56D0298E29EB41390048B294 /* TokenType_Comparator_Exp.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenType_Comparator_Exp.graphql.swift; sourceTree = "<group>"; };
+		56D0298F29EB41390048B294 /* Float_Comparator_Exp.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float_Comparator_Exp.graphql.swift; sourceTree = "<group>"; };
+		56D0299029EB41390048B294 /* TokenFilter.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenFilter.graphql.swift; sourceTree = "<group>"; };
+		56D0299129EB41390048B294 /* TokenBalanceFilter.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenBalanceFilter.graphql.swift; sourceTree = "<group>"; };
+		56D0299229EB41390048B294 /* Identity_Comparator_Exp.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity_Comparator_Exp.graphql.swift; sourceTree = "<group>"; };
+		56D0299329EB41390048B294 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +147,7 @@
 		56D0279C29EA525D0048B294 /* EthTokyoApp */ = {
 			isa = PBXGroup;
 			children = (
-				56D0287829EAF9370048B294 /* EthTokyoApp */,
+				56D0296A29EB41390048B294 /* AirStackAPI */,
 				56D027AF29EA67C70048B294 /* View */,
 				56D027B029EA67CC0048B294 /* ViewModel */,
 				56D027AE29EA67BC0048B294 /* Model */,
@@ -131,6 +181,7 @@
 			children = (
 				56D027B329EA6BAD0048B294 /* LoginView.swift */,
 				56D027B529EA6BB80048B294 /* MainView.swift */,
+				56D028CE29EB17020048B294 /* SearchView.swift */,
 				56D0287429EABD7F0048B294 /* NFTDetailView.swift */,
 			);
 			path = View;
@@ -140,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				56D027F029EA81D40048B294 /* MainViewModel.swift */,
+				56D0291C29EB1A500048B294 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -153,62 +205,101 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		56D0287829EAF9370048B294 /* EthTokyoApp */ = {
+		56D0296A29EB41390048B294 /* AirStackAPI */ = {
 			isa = PBXGroup;
 			children = (
-				56D0287929EAF9370048B294 /* ViewModel */,
-				56D0287B29EAF9370048B294 /* Util */,
-				56D0287E29EAF9370048B294 /* EthTokyoAppApp.swift */,
-				56D0287F29EAF9370048B294 /* Assets.xcassets */,
-				56D0288029EAF9370048B294 /* Preview Content */,
-				56D0288229EAF9370048B294 /* Model */,
-				56D0288429EAF9370048B294 /* View */,
-				56D0288829EAF9370048B294 /* ContentView.swift */,
+				56D0296B29EB41390048B294 /* AirStackAPI.graphql.swift */,
+				56D0296C29EB41390048B294 /* Operations */,
+				56D0297029EB41390048B294 /* Schema */,
 			);
-			name = EthTokyoApp;
+			path = AirStackAPI;
+			sourceTree = SOURCE_ROOT;
+		};
+		56D0296C29EB41390048B294 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				56D0296D29EB41390048B294 /* Queries */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
-		56D0287929EAF9370048B294 /* ViewModel */ = {
+		56D0296D29EB41390048B294 /* Queries */ = {
 			isa = PBXGroup;
 			children = (
-				56D0287A29EAF9370048B294 /* MainViewModel.swift */,
+				56D0296E29EB41390048B294 /* TokenBalancesQuery.graphql.swift */,
+				56D0296F29EB41390048B294 /* TokensQuery.graphql.swift */,
 			);
-			path = ViewModel;
+			path = Queries;
 			sourceTree = "<group>";
 		};
-		56D0287B29EAF9370048B294 /* Util */ = {
+		56D0297029EB41390048B294 /* Schema */ = {
 			isa = PBXGroup;
 			children = (
-				56D0287C29EAF9370048B294 /* GetRandomEmoji.swift */,
-				56D0287D29EAF9370048B294 /* MotionManager.swift */,
+				56D0297129EB41390048B294 /* CustomScalars */,
+				56D0297629EB41390048B294 /* Enums */,
+				56D0297A29EB41390048B294 /* Objects */,
+				56D0298629EB41390048B294 /* SchemaConfiguration.swift */,
+				56D0298729EB41390048B294 /* InputObjects */,
+				56D0299329EB41390048B294 /* SchemaMetadata.graphql.swift */,
 			);
-			path = Util;
+			path = Schema;
 			sourceTree = "<group>";
 		};
-		56D0288029EAF9370048B294 /* Preview Content */ = {
+		56D0297129EB41390048B294 /* CustomScalars */ = {
 			isa = PBXGroup;
 			children = (
-				56D0288129EAF9370048B294 /* Preview Assets.xcassets */,
+				56D0297229EB41390048B294 /* Identity.swift */,
+				56D0297329EB41390048B294 /* Address.swift */,
+				56D0297429EB41390048B294 /* Time.swift */,
+				56D0297529EB41390048B294 /* Map.swift */,
 			);
-			path = "Preview Content";
+			path = CustomScalars;
 			sourceTree = "<group>";
 		};
-		56D0288229EAF9370048B294 /* Model */ = {
+		56D0297629EB41390048B294 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				56D0288329EAF9370048B294 /* GraphQLClient.swift */,
+				56D0297729EB41390048B294 /* TokenType.graphql.swift */,
+				56D0297829EB41390048B294 /* OrderBy.graphql.swift */,
+				56D0297929EB41390048B294 /* TokenBlockchain.graphql.swift */,
 			);
-			path = Model;
+			path = Enums;
 			sourceTree = "<group>";
 		};
-		56D0288429EAF9370048B294 /* View */ = {
+		56D0297A29EB41390048B294 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				56D0288529EAF9370048B294 /* NFTDetailView.swift */,
-				56D0288629EAF9370048B294 /* LoginView.swift */,
-				56D0288729EAF9370048B294 /* MainView.swift */,
+				56D0297B29EB41390048B294 /* NftMetadata.graphql.swift */,
+				56D0297C29EB41390048B294 /* TokenNft.graphql.swift */,
+				56D0297D29EB41390048B294 /* Media.graphql.swift */,
+				56D0297E29EB41390048B294 /* ImageSizes.graphql.swift */,
+				56D0297F29EB41390048B294 /* TokensOutput.graphql.swift */,
+				56D0298029EB41390048B294 /* TokenBalance.graphql.swift */,
+				56D0298129EB41390048B294 /* TokenBalancesOutput.graphql.swift */,
+				56D0298229EB41390048B294 /* PageInfo.graphql.swift */,
+				56D0298329EB41390048B294 /* Query.graphql.swift */,
+				56D0298429EB41390048B294 /* Wallet.graphql.swift */,
+				56D0298529EB41390048B294 /* Token.graphql.swift */,
 			);
-			path = View;
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		56D0298729EB41390048B294 /* InputObjects */ = {
+			isa = PBXGroup;
+			children = (
+				56D0298829EB41390048B294 /* String_Comparator_Exp.graphql.swift */,
+				56D0298929EB41390048B294 /* TokenBalancesInput.graphql.swift */,
+				56D0298A29EB41390048B294 /* Address_Comparator_Exp.graphql.swift */,
+				56D0298B29EB41390048B294 /* TokensInput.graphql.swift */,
+				56D0298C29EB41390048B294 /* TokenBalanceOrderBy.graphql.swift */,
+				56D0298D29EB41390048B294 /* TokenOrderBy.graphql.swift */,
+				56D0298E29EB41390048B294 /* TokenType_Comparator_Exp.graphql.swift */,
+				56D0298F29EB41390048B294 /* Float_Comparator_Exp.graphql.swift */,
+				56D0299029EB41390048B294 /* TokenFilter.graphql.swift */,
+				56D0299129EB41390048B294 /* TokenBalanceFilter.graphql.swift */,
+				56D0299229EB41390048B294 /* Identity_Comparator_Exp.graphql.swift */,
+			);
+			path = InputObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D0288E29EAF9370048B294 /* Preview Assets.xcassets in Resources */,
 				56D027A529EA525E0048B294 /* Preview Assets.xcassets in Resources */,
-				56D0288D29EAF9370048B294 /* Assets.xcassets in Resources */,
 				56D027A229EA525E0048B294 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,23 +387,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				56D0287529EABD7F0048B294 /* NFTDetailView.swift in Sources */,
+				56D0291D29EB1A500048B294 /* SearchViewModel.swift in Sources */,
+				56D029B229EB41390048B294 /* TokenFilter.graphql.swift in Sources */,
+				56D028CF29EB17020048B294 /* SearchView.swift in Sources */,
+				56D0299529EB41390048B294 /* TokenBalancesQuery.graphql.swift in Sources */,
+				56D029B129EB41390048B294 /* Float_Comparator_Exp.graphql.swift in Sources */,
+				56D029B429EB41390048B294 /* Identity_Comparator_Exp.graphql.swift in Sources */,
+				56D0299E29EB41390048B294 /* NftMetadata.graphql.swift in Sources */,
+				56D029AE29EB41390048B294 /* TokenBalanceOrderBy.graphql.swift in Sources */,
+				56D0299D29EB41390048B294 /* TokenBlockchain.graphql.swift in Sources */,
+				56D029B329EB41390048B294 /* TokenBalanceFilter.graphql.swift in Sources */,
+				56D0299F29EB41390048B294 /* TokenNft.graphql.swift in Sources */,
+				56D029A629EB41390048B294 /* Query.graphql.swift in Sources */,
+				56D029AB29EB41390048B294 /* TokenBalancesInput.graphql.swift in Sources */,
+				56D0299C29EB41390048B294 /* OrderBy.graphql.swift in Sources */,
+				56D029A429EB41390048B294 /* TokenBalancesOutput.graphql.swift in Sources */,
 				56D027B229EA67FC0048B294 /* GraphQLClient.swift in Sources */,
+				56D0299929EB41390048B294 /* Time.swift in Sources */,
+				56D029A829EB41390048B294 /* Token.graphql.swift in Sources */,
+				56D029A129EB41390048B294 /* ImageSizes.graphql.swift in Sources */,
 				56D0287729EAC9460048B294 /* GetRandomEmoji.swift in Sources */,
-				56D0288A29EAF9370048B294 /* GetRandomEmoji.swift in Sources */,
-				56D0289029EAF9370048B294 /* NFTDetailView.swift in Sources */,
+				56D029AA29EB41390048B294 /* String_Comparator_Exp.graphql.swift in Sources */,
+				56D0299629EB41390048B294 /* TokensQuery.graphql.swift in Sources */,
+				56D0299729EB41390048B294 /* Identity.swift in Sources */,
 				56D027F129EA81D40048B294 /* MainViewModel.swift in Sources */,
 				56D027A029EA525D0048B294 /* ContentView.swift in Sources */,
-				56D0288929EAF9370048B294 /* MainViewModel.swift in Sources */,
-				56D0288B29EAF9370048B294 /* MotionManager.swift in Sources */,
-				56D0288F29EAF9370048B294 /* GraphQLClient.swift in Sources */,
 				56D027B429EA6BAD0048B294 /* LoginView.swift in Sources */,
-				56D0289229EAF9370048B294 /* MainView.swift in Sources */,
 				56D027B629EA6BB80048B294 /* MainView.swift in Sources */,
+				56D029A329EB41390048B294 /* TokenBalance.graphql.swift in Sources */,
+				56D0299429EB41390048B294 /* AirStackAPI.graphql.swift in Sources */,
+				56D029A229EB41390048B294 /* TokensOutput.graphql.swift in Sources */,
 				56D0287029EAB50D0048B294 /* MotionManager.swift in Sources */,
-				56D0289329EAF9370048B294 /* ContentView.swift in Sources */,
+				56D029B029EB41390048B294 /* TokenType_Comparator_Exp.graphql.swift in Sources */,
+				56D029A029EB41390048B294 /* Media.graphql.swift in Sources */,
+				56D029A729EB41390048B294 /* Wallet.graphql.swift in Sources */,
+				56D029AF29EB41390048B294 /* TokenOrderBy.graphql.swift in Sources */,
+				56D029AD29EB41390048B294 /* TokensInput.graphql.swift in Sources */,
+				56D0299829EB41390048B294 /* Address.swift in Sources */,
+				56D0299A29EB41390048B294 /* Map.swift in Sources */,
+				56D029A529EB41390048B294 /* PageInfo.graphql.swift in Sources */,
 				56D0279E29EA525D0048B294 /* EthTokyoAppApp.swift in Sources */,
-				56D0289129EAF9370048B294 /* LoginView.swift in Sources */,
-				56D0288C29EAF9370048B294 /* EthTokyoAppApp.swift in Sources */,
+				56D029AC29EB41390048B294 /* Address_Comparator_Exp.graphql.swift in Sources */,
+				56D0299B29EB41390048B294 /* TokenType.graphql.swift in Sources */,
+				56D029B529EB41390048B294 /* SchemaMetadata.graphql.swift in Sources */,
+				56D029A929EB41390048B294 /* SchemaConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

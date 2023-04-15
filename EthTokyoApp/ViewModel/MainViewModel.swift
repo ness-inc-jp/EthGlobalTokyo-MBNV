@@ -7,6 +7,7 @@
 
 import Foundation
 import Apollo
+import ApolloAPI
 
 class MainViewModel: ObservableObject {
     
@@ -21,11 +22,9 @@ class MainViewModel: ObservableObject {
                 switch result {
                 case .success(let data):
                     
-                    data.tokenBalances?.tokenBalance?.forEach({ tokenBalance in
-                    
-                        print("Name: \(tokenBalance.token?.name)")
-                        print("Image: \(tokenBalance.tokenNfts?.metaData?.image)")
-                        
+                    data.tokenBalances?.tokenBalance?.forEach({ balance in
+                        print("name: \(balance.tokenNfts?.metaData?.name)")
+                        print("image: \(balance.tokenNfts?.metaData?.image)")
                     })
                     
                     self?.tokenBalancesData = data

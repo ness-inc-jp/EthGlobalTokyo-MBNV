@@ -19,9 +19,13 @@ struct MainView: View {
     @State var bottomSheetPosition: BottomSheetPosition = .hidden
     @State var selectedNFT: DetailNFT?
     
-    let images = ["image1", "image2", "image3"]
+    @State var isShowAction: Bool = false
+    @State var isShowSearchView: Bool = false
     
     var body: some View {
+        NavigationView {
+        
+        
         ZStack {
             
             Color.black
@@ -32,7 +36,7 @@ struct MainView: View {
                 HStack {
                     
                     Button {
-                        
+                        isShowAction = true
                     } label: {
                         Text(getRandomEmoji())
                             .font(.title3)
@@ -40,9 +44,36 @@ struct MainView: View {
                     .padding(.all, 12)
                     .background(.white.opacity(0.1))
                     .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .actionSheet(isPresented: $isShowAction, content: {
+                        ActionSheet(
+                            title: Text("Wallet Address"),
+                            message: Text(ethereum.selectedAddress),
+                            buttons: [
+                                .destructive(Text("Disconnect")) {
+                                    ethereum.disconnect()
+                                    ethereum.selectedAddress = ""
+                                },
+                                .cancel(Text("Cancel")) {
+                                    isShowAction = false
+                                }
+                            ])
+                    })
                     
                     Spacer()
                     
+                    NavigationLink {
+                        
+                        SearchView()
+                            .navigationBarBackButtonHidden()
+                        
+                    } label: {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.white)
+                            .padding(.trailing)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 22, height: 22)
+                    }
+                        
                     
                 }
                 .overlay(content: {
@@ -79,6 +110,7 @@ struct MainView: View {
                                                 imageUrl: imageUrl
                                             )
                                         }
+                                    
                                 }
                             }
 
@@ -89,7 +121,6 @@ struct MainView: View {
                             animation: .easeInOut
                         )
                         
-
                     }
 
                 }
@@ -109,12 +140,14 @@ struct MainView: View {
                 .enableSwipeToDismiss()
                 .showDragIndicator(false)
                 .ignoresSafeArea()
+            
         }
         .onAppear {
-            viewModel.fetchTokenBalances(owner: ethereum.selectedAddress)
-//            viewModel.fetchTokenBalances(owner: "2-bit.eth")
+//            viewModel.fetchTokenBalances(owner: ethereum.selectedAddress)
+            viewModel.fetchTokenBalances(owner: "0x4274ed09b114b9c629d34EdaF06526b5Bc7F9d81")
         }
         
+        }
     }
     
     func convertHttpToIpfs(str: String) -> String {

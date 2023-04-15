@@ -1,23 +1,5 @@
-query TokenBalancesQuery($ethereumInput: TokenBalancesInput!, $polygonInput: TokenBalancesInput!) {
-  ethereumTokenBalances: TokenBalances(input: $ethereumInput) {
-    TokenBalance {
-      token {
-        name
-        symbol
-      }
-      tokenNfts {
-        metaData {
-          name
-          image
-          description
-        }
-      }
-      tokenAddress
-      tokenId
-      lastUpdatedTimestamp
-    }
-  }
-  polygonTokenBalances: TokenBalances(input: $polygonInput) {
+query TokenBalancesQuery($input: TokenBalancesInput!) {
+  TokenBalances(input: $input) {
     TokenBalance {
       token {
         name
