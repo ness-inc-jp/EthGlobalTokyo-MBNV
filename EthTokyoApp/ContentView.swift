@@ -13,14 +13,12 @@ struct ContentView: View {
     @EnvironmentObject var ethereum: Ethereum
     
     var body: some View {
-        
-        MainView()
-        
-//        if ethereum.selectedAddress.isEmpty {
-//            LoginView()
-//        } else {
-//            MainView()
-//        }
+            
+        if ethereum.selectedAddress.isEmpty {
+            LoginView()
+        } else {
+            MainView()
+        }
         
     }
 }

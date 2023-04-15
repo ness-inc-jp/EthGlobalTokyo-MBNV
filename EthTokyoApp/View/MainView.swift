@@ -9,11 +9,15 @@ import SwiftUI
 import metamask_ios_sdk
 import SDWebImageSwiftUI
 import WaterfallGrid
+import BottomSheet
 
 struct MainView: View {
     
     @EnvironmentObject var ethereum: Ethereum
     @StateObject private var viewModel = MainViewModel()
+    
+    @State var bottomSheetPosition: BottomSheetPosition = .hidden
+    @State var selectedNFT: DetailNFT?
     
     let images = ["image1", "image2", "image3"]
     
@@ -24,6 +28,30 @@ struct MainView: View {
                 .ignoresSafeArea()
             
             VStack {
+                
+                HStack {
+                    
+                    Button {
+                        
+                    } label: {
+                        Text(getRandomEmoji())
+                            .font(.title3)
+                    }
+                    .padding(.all, 12)
+                    .background(.white.opacity(0.1))
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    
+                    Spacer()
+                    
+                    
+                }
+                .overlay(content: {
+                    Text("MBNV")
+                        .font(.title2.bold())
+                        .foregroundColor(.white)
+                        
+                })
+                .padding(.bottom, 4)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
@@ -39,6 +67,18 @@ struct MainView: View {
                                         .resizable()
                                         .indicator(.activity)
                                         .aspectRatio(contentMode: .fit)
+                                        .onTapGesture {
+                                            bottomSheetPosition = .absolute(UIScreen.main.bounds.height)
+                                            
+                                            let metadataName = balance.tokenNfts?.metaData?.name
+                                            let tokenName = balance.token?.name
+                                            
+                                            selectedNFT = DetailNFT(
+                                                name: metadataName ?? tokenName ?? "",
+                                                tokenId: balance.tokenId ?? "",
+                                                imageUrl: imageUrl
+                                            )
+                                        }
                                 }
                             }
 
@@ -48,6 +88,7 @@ struct MainView: View {
                             spacing: 10,
                             animation: .easeInOut
                         )
+                        
 
                     }
 
@@ -55,10 +96,23 @@ struct MainView: View {
                 
             }
             
+            Rectangle()
+                .frame(width: 0, height: 0)
+                .bottomSheet(bottomSheetPosition: $bottomSheetPosition, switchablePositions: [bottomSheetPosition]) {
+                    if let detailNFT = selectedNFT {
+                        NFTDetailView(detailNFT: detailNFT)
+                    }
+                }
+                .enableBackgroundBlur(true)
+                .backgroundBlurMaterial(.dark(.thin))
+                .enableContentDrag()
+                .enableSwipeToDismiss()
+                .showDragIndicator(false)
+                .ignoresSafeArea()
         }
         .onAppear {
-//            viewModel.fetchTokenBalances(owner: ethereum.selectedAddress)
-            viewModel.fetchTokenBalances(owner: "2-bit.eth")
+            viewModel.fetchTokenBalances(owner: ethereum.selectedAddress)
+//            viewModel.fetchTokenBalances(owner: "2-bit.eth")
         }
         
     }
@@ -72,7 +126,6 @@ struct MainView: View {
         }
     }
 
-    
 }
 
 

@@ -16,10 +16,12 @@ class GraphQLClient {
     
     func fetchTokenBalances(owner: String, compleation: @escaping (Result<AirStackAPI.TokenBalancesQuery.Data, Error>) -> Void) {
         
-        let input = AirStackAPI.TokenBalancesInput(
+        let ethereumInput = AirStackAPI.TokenBalancesInput(
             filter: .init(owner: .some(.init(_eq: GraphQLNullable(stringLiteral: owner)))),
             blockchain: .init(.ethereum)
         )
+        
+        let polygonInput = 
         
         GraphQLClient.shared.apollo.fetch(query: AirStackAPI.TokenBalancesQuery(input: input)) { result in
             switch result {
