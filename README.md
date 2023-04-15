@@ -5,7 +5,7 @@
 
 
 ## How it's made?🤔
-***
+
 
 For this project, we created an iOS app using Swift to provide a better ownership experience.
 
@@ -19,7 +19,7 @@ However, GraphQL and Swift were not very compatible, and there were still some i
 
 
 ## Tech used
-___
+
 - Swift
 - Metamask SDK
 - Airstack API
