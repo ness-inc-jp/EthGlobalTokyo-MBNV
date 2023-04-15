@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import metamask_ios_sdk
 
 @main
 struct EthTokyoAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(MetaMaskSDK.shared.ethereum)
         }
     }
 }

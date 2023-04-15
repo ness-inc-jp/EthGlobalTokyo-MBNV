@@ -11,6 +11,10 @@
 		56D027A029EA525D0048B294 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0279F29EA525D0048B294 /* ContentView.swift */; };
 		56D027A229EA525E0048B294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D027A129EA525E0048B294 /* Assets.xcassets */; };
 		56D027A529EA525E0048B294 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D027A429EA525E0048B294 /* Preview Assets.xcassets */; };
+		56D027AD29EA54830048B294 /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 56D027AC29EA54830048B294 /* metamask-ios-sdk */; };
+		56D027B229EA67FC0048B294 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D027B129EA67FC0048B294 /* AppState.swift */; };
+		56D027B429EA6BAD0048B294 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D027B329EA6BAD0048B294 /* LoginView.swift */; };
+		56D027B629EA6BB80048B294 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D027B529EA6BB80048B294 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		56D0279F29EA525D0048B294 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		56D027A129EA525E0048B294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56D027A429EA525E0048B294 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56D027B129EA67FC0048B294 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		56D027B329EA6BAD0048B294 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		56D027B529EA6BB80048B294 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D027AD29EA54830048B294 /* metamask-ios-sdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,9 @@
 		56D0279C29EA525D0048B294 /* EthTokyoApp */ = {
 			isa = PBXGroup;
 			children = (
+				56D027AF29EA67C70048B294 /* View */,
+				56D027B029EA67CC0048B294 /* ViewModel */,
+				56D027AE29EA67BC0048B294 /* Model */,
 				56D0279D29EA525D0048B294 /* EthTokyoAppApp.swift */,
 				56D0279F29EA525D0048B294 /* ContentView.swift */,
 				56D027A129EA525E0048B294 /* Assets.xcassets */,
@@ -65,6 +76,30 @@
 				56D027A429EA525E0048B294 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56D027AE29EA67BC0048B294 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56D027B129EA67FC0048B294 /* AppState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56D027AF29EA67C70048B294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56D027B329EA6BAD0048B294 /* LoginView.swift */,
+				56D027B529EA6BB80048B294 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56D027B029EA67CC0048B294 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +118,9 @@
 			dependencies = (
 			);
 			name = EthTokyoApp;
+			packageProductDependencies = (
+				56D027AC29EA54830048B294 /* metamask-ios-sdk */,
+			);
 			productName = EthTokyoApp;
 			productReference = 56D0279A29EA525D0048B294 /* EthTokyoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 56D0279129EA525D0048B294;
+			packageReferences = (
+				56D027AB29EA54830048B294 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+			);
 			productRefGroup = 56D0279B29EA525D0048B294 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D027B229EA67FC0048B294 /* AppState.swift in Sources */,
 				56D027A029EA525D0048B294 /* ContentView.swift in Sources */,
+				56D027B429EA6BAD0048B294 /* LoginView.swift in Sources */,
+				56D027B629EA6BB80048B294 /* MainView.swift in Sources */,
 				56D0279E29EA525D0048B294 /* EthTokyoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56D027AB29EA54830048B294 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56D027AC29EA54830048B294 /* metamask-ios-sdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56D027AB29EA54830048B294 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
+			productName = "metamask-ios-sdk";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56D0279229EA525D0048B294 /* Project object */;
 }
