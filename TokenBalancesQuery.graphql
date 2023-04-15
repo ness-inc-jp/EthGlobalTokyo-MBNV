@@ -1,0 +1,20 @@
+query TokenBalancesQuery($input: TokenBalancesInput!) {
+  TokenBalances(input: $input) {
+    TokenBalance {
+      token {
+        name
+        symbol
+      }
+      tokenNfts {
+        metaData {
+          name
+          image
+          description
+        }
+      }
+      tokenAddress
+      tokenId
+      lastUpdatedTimestamp
+    }
+  }
+}

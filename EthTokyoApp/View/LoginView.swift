@@ -51,11 +51,13 @@ struct LoginView: View {
                 }).store(in: &cancellables)
                 
             } label: {
+                
                 Text("Connect MetaMask")
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .frame(height: 52)
                     .background(Color.black.cornerRadius(16))
+                
             }
             .padding(.bottom, 60)
         }

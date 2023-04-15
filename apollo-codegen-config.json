@@ -1,0 +1,23 @@
+{
+  "schemaNamespace": "AirStackAPI",
+  "input": {
+    "operationSearchPaths": ["**/*.graphql"],
+    "schemaSearchPaths": ["**/*.graphqls"]
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": "./AirStackAPI",
+      "moduleType": {
+        "embeddedInTarget": {
+          "name": "EthTokyoApp"
+        }
+      }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  }
+}
