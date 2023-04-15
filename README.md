@@ -1,7 +1,7 @@
 # MBNV(Most Beautiful NFT Viewer)
 
 ### Description of our project.
-
+説明記載予定
 
 
 ## How it's made?🤔
