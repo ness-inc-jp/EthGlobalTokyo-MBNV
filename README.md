@@ -1,11 +1,11 @@
 # MBNV(Most Beautiful NFT Viewer)
 
-### Description of our project.
-説明記載予定
+## What is MBNV?
+What NFTs do you possess and how do you see them?
+The real experience of owning an NFT is provided through the iOS app.
 
 
 ## How it's made?🤔
-
 
 For this project, we created an iOS app using Swift to provide a better ownership experience.
 
