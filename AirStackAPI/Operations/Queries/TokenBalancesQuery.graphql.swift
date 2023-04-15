@@ -88,15 +88,15 @@ public extension AirStackAPI {
             .field("lastUpdatedTimestamp", AirStackAPI.Time?.self),
           ] }
 
-          ///  Nested Query - allows retrieving token contract level data
+          ///  Nested Query - allows retrieving token contract level data 
           public var token: Token? { __data["token"] }
-          ///  Nested Query - allows retrieving token NFT contract level data, such as images, traits, and so on
+          ///  Nested Query - allows retrieving token NFT contract level data, such as images, traits, and so on 
           public var tokenNfts: TokenNfts? { __data["tokenNfts"] }
-          ///  Smart contract address of the token
+          ///  Smart contract address of the token 
           public var tokenAddress: AirStackAPI.Address { __data["tokenAddress"] }
-          ///  Unique NFT token ID
+          ///  Unique NFT token ID 
           public var tokenId: String? { __data["tokenId"] }
-          ///  Timestamp of the latest token balance change happened
+          ///  Timestamp of the latest token balance change happened 
           public var lastUpdatedTimestamp: AirStackAPI.Time? { __data["lastUpdatedTimestamp"] }
 
           /// TokenBalances.TokenBalance.Token
@@ -113,9 +113,9 @@ public extension AirStackAPI {
               .field("symbol", String?.self),
             ] }
 
-            ///  Name of the token, mirrored from the smart contract
+            ///  Name of the token, mirrored from the smart contract 
             public var name: String? { __data["name"] }
-            ///  Symbol of the token, mirrored from the smart contract
+            ///  Symbol of the token, mirrored from the smart contract 
             public var symbol: String? { __data["symbol"] }
           }
 
@@ -150,11 +150,11 @@ public extension AirStackAPI {
                 .field("description", String?.self),
               ] }
 
-              ///  Name of the token, mirrored from the smart contract
+              ///  Name of the token, mirrored from the smart contract 
               public var name: String? { __data["name"] }
-              ///  Link to the token image, mirrored from the smart contract
+              ///  Link to the token image, mirrored from the smart contract 
               public var image: String? { __data["image"] }
-              ///  Description of the token, mirrored from the smart contract
+              ///  Description of the token, mirrored from the smart contract 
               public var description: String? { __data["description"] }
             }
           }

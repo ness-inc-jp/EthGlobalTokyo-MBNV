@@ -20,7 +20,14 @@ class MainViewModel: ObservableObject {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let data):
-                    print(data)
+                    
+                    data.tokenBalances?.tokenBalance?.forEach({ tokenBalance in
+                    
+                        print("Name: \(tokenBalance.token?.name)")
+                        print("Image: \(tokenBalance.tokenNfts?.metaData?.image)")
+                        
+                    })
+                    
                     self?.tokenBalancesData = data
                     
                 case.failure(let error):
